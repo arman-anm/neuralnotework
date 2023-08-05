@@ -16,13 +16,32 @@
     <!-- Note Starts-->
     <section class="noteSection">
       <details>
-        <summary class="tldrNoteTitle">
-            Lorem ipsum dolor sit amet.
+        <summary class="tldrTitle">
+          Why indexing starts with '0' in JavaScript ?
         </summary>
-        <!-- Date & Version History -->
-        <article>
+        <article class="tldr-article">
           <p>
-            
+            The decision to start indexing at 0 in JavaScript and many other programming languages is rooted in computer science and memory management principles. While it may seem counterintuitive at first, there are some reasons for this convention:
+            <br>
+            <ol>
+              <li>
+                Array and Pointer Arithmetic: In low-level programming languages like C and assembly, arrays are often implemented as pointers to memory locations. When you access an element in an array, the index is used as an offset from the base memory address. Starting with 0 makes the arithmetic simpler because the first element is at the base address (offset 0). For example, accessing the third element in an array `arr` would require calculating the address at `arr + (3 * size_of_each_element)`, which simplifies to `arr + 3` when indexing starts at 0.
+              </li>
+              <br>
+              <li>
+                Consistency with Memory Addressing: Computer memory is typically organized into contiguous blocks, and each element in an array occupies a single memory slot. By starting indexing at 0, the position of the first element directly corresponds to its memory address.
+              </li>
+              <br>
+              <li>
+                Mathematical Convenience: Many algorithms and mathematical notations are 0-based. For instance, in many programming languages, the length of an array is obtained by subtracting the starting index (0) from the ending index. This results in a clean and consistent representation.
+              </li>
+              <br>
+              <li>
+                Historical Reasons: The concept of 0-based indexing can be traced back to some early programming languages like Fortran and BCPL, which influenced subsequent languages like C and JavaScript.
+              </li>
+            </ol>
+            <br>
+            While 0-based indexing might feel unintuitive to some, it has become a convention that many programmers have grown accustomed to over the years. It is essential to be aware of this convention when working with arrays and other data structures in JavaScript and other programming languages that adopt the same indexing approach.
           </p>
           <!-- Source -->
           <small>

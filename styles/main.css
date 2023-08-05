@@ -93,10 +93,6 @@ small {
   margin-bottom: 1rem;
 }
 
-ul {
-  /* list-style: none; */
-}
-
 
 /* <===== BODY =====> */
 body {
@@ -112,4 +108,16 @@ body {
 .noteSection {
   padding: var(--white-space);
   border: 1px solid black;
+}
+
+.tldrTitle {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-medium);
+  color: var(--color-h3);
+  line-height: 1.35;
+}
+
+.tldr-article {
+  padding: var(--white-space) var(--white-space-extended);
 }

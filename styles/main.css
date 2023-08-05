@@ -1,0 +1,115 @@
+/* <===== FONTS =====> */
+/* Nunito Sans */
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700&display=swap');
+  /* font-family: 'Nunito Sans', sans-serif; */
+  
+/* Bebas Neue */
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  /* font-family: 'Bebas Neue', sans-serif; */
+
+/* <===== ROOT & VARIABLES =====> */
+:root {
+  /* TYPOGRAPHY */
+  font-size: 10px;  /* making my font size 10px would make it easier to calculate  */
+  --ff-primary: 'Nunito Sans', sans-serif;
+  --ff-secondary: 'Bebas Neue', sans-serif;
+  /* --ff-bangla: ; */
+  --fs-p: clamp(1.6rem, 5vw, 2.4rem);
+  --fs-h1: calc(var(--fs-p) * 2.5);
+  --fs-h2: calc(var(--fs-p) * 1.75);
+  --fs-h3: calc(var(--fs-p) * 1.25);
+  --fs-btn: calc(var(--fs-p) * .75);
+  --fs-small: calc(var(--fs-p) * .5);
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700; 
+  /* COLOR */
+  --color-body-bg: ;
+  --color-text: ;
+  --color-a-link: ;
+  --color-a-hover: ;
+  --color-a-active: ;
+  --color-a-visited: ;
+  --color-h1: ;
+  --color-h2: ;
+  --color-h3: ;
+  --color-btn-bg: ;
+  --color-btn-txt: ;
+  --color-btn-border: ;
+  --color-btn-hover-bg: ;
+  --color-btn-hover-txt: ;
+  /* LAYOUT */
+  --white-space: calc(var(--fs-p) * 1);
+  --white-space-extended: calc(var(--fs-p) * 2);
+}
+
+/* <===== GLOBAL/REPEATED STYLES =====> */
+h1 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  text-transform: capitalize;
+  color: var(--color-h1);
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-medium);
+  text-transform: capitalize;
+  color: var(--color-h2);
+  line-height: 1.35;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-medium);
+  text-transform: capitalize;
+  color: var(--color-h3);
+  line-height: 1.35;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-p);
+  font-weight: var(--fw-normal);
+  color: var(--color-txt);
+  line-height: 1.5;
+  margin-bottom: 1.75rem;
+}
+
+small {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-normal);
+  color: var(--color-txt);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+ul {
+  /* list-style: none; */
+}
+
+
+/* <===== BODY =====> */
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--white-space);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-p);
+  color: var(--color-txt);
+  background-color: var(--color-body-bg);
+}
+
+.noteSection {
+  padding: var(--white-space);
+  border: 1px solid black;
+}
